@@ -9,7 +9,12 @@ var AppActions = {
 		})
 	},
 
-
+	receiveContacts: function(contacts){
+		AppDispatcher.handleViewAction({
+			actionType: AppConstants.RECEIVE_CONTACT,
+			contacts: contacts
+		})
+	},
 
 	removeContact: function(contactId){
 		AppDispatcher.handleViewAction({
